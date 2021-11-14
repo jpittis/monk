@@ -1,0 +1,19 @@
+\include "swing.ly"
+\version "2.20.0"
+
+\header { tagline = " " }
+
+\score {
+  \midi { }
+
+  \relative \tripletFeel 8 {
+    \key c \major
+    \time 4/4
+    \clef treble
+    \set Staff.midiInstrument = #"piano"
+    c'8 d8 dis8 e8 r2
+    f8 fis8 g8 a8 r2
+    g8 a8 g8 fis8 f4 dis4
+    e1
+  }
+}
